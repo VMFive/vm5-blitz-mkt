@@ -12,7 +12,7 @@
     box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.6);
 }
 
-.vmfive-question {
+.vmfive-issue {
 
     .container {
         width: 45%;
@@ -25,36 +25,36 @@
     .vmfive-card {
         padding: 40px;
     }
-}
 
-.vmfive-question-title {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    height: 70%;
-
-    .row {
-        justify-content: center;
-    }
-}
-
-.vmfive-question-list {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    height: 70%;
-
-    .vmfive-list-item {
+    .vmfive-issue-title {
         display: inline-flex;
-        height: 20%;
-        justify-content: center;
         align-items: center;
-        margin-bottom: 10px;
+        justify-content: center;
+        height: 70%;
 
-        img {
-            height: 20px;
-            margin-right: 10px;
+        .row {
+            justify-content: center;
+        }
+    }
+
+    .vmfive-issue-list {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        height: 70%;
+
+        .vmfive-list-item {
+            display: inline-flex;
+            height: 20%;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+
+            img {
+                height: 20px;
+                margin-right: 10px;
+            }
         }
     }
 }
@@ -63,14 +63,18 @@
     margin-top: 5%;
 
     .vmfive-solution-title {
+        text-align: center;
         word-spacing: 0.25rem;
     }
 
     .vmfive-solution-sub-title {
+        text-align: center;
+        font-size: 1.5rem;
         letter-spacing: 0.25rem;
     }
 
     .vmfive-solution-full-container {
+        display: inline-flex;
         margin-top: 2%;
         min-height: 100vh;
         background-image: url('/image/background_1.png');
@@ -78,10 +82,21 @@
         background-repeat: no-repeat;
         background-size: 100% 100%;
 
+        .vmfive-card-row-container {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         .row {
             display: inline-flex;
-            justify-content: space-between;
+            // justify-content: space-between;
             flex-direction: row;
+            width: 100%;
+        }
+
+        .row:not(:first-child) {
+            margin-top: 5%;
         }
 
         .vmfive-card {
@@ -89,27 +104,22 @@
             align-items: center;
             width: 30%;
             min-height: 400px;
-            padding: 40px;
+            margin-right: 3%;
+            padding: 20px;
+
+            .vmfive-card-title {
+                text-align: center;
+            }
         }
 
         img {
-            width: 50%;
+            width: 45%;
         }
     }
 }
 
 @media (max-width: 768px) {
-    .vmfive-question-title {
-        margin-top: 20px;
-        margin-bottom: 20px;
-
-        span {
-            padding: 0;
-            font-size: 1.7rem;
-        }
-    }
-
-    .vmfive-question {
+    .vmfive-issue {
         .container {
             width: 100%;
         }
@@ -118,8 +128,56 @@
             padding: 10px;
         }
 
+        .vmfive-issue-title {
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+            span {
+                padding: 0;
+                font-size: 1.7rem;
+            }
+        }
+
         .vmfive-list-item {
             align-items: flex-start;
+        }
+    }
+
+    .vmfive-solution {
+
+        .vmfive-solution-sub-title {
+            font-size: 1rem;
+            letter-spacing: 0.1rem;
+        }
+
+        .vmfive-solution-full-container {
+            margin-top: 2%;
+            min-height: 100vh;
+            background-image: url('/image/background_1.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+
+            .row {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+
+            .row:not(:first-child) {
+                margin-top: 0%;
+            }
+
+            .vmfive-card {
+                width: 80%;
+                min-height: 400px;
+                margin-right: 0%;
+                margin-top: 5%;
+            }
+
+            img {
+                width: 45%;
+            }
         }
     }
 
