@@ -1,3 +1,7 @@
+.text-aac-gray {
+  color: #6B6B6B;
+}
+
 .vmfive-logo {
   width: 25%;
 
@@ -173,6 +177,21 @@
   li {
     font-size: 1.2rem;
   }
+}
+
+.vmfive-partners {
+  .col-md-3 {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.vmfive-contact {
+  margin-top: 5%;
 }
 
 @media (max-width: 768px) {
