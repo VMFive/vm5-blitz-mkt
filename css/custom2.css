@@ -1,5 +1,5 @@
 /* kv */
-.kv {
+.vmfive-kv {
   background: right / contain no-repeat url(../image/kv_bg.png);
 }
 
@@ -57,4 +57,5 @@
   background: linear-gradient(#192744, #0B1327);
   padding: 25px 20px;
   border-radius: 20px;
+  margin-left: -20px;
 }
