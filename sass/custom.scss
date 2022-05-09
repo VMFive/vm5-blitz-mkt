@@ -71,8 +71,6 @@
 
 .vmfive-solution {
 
-  margin-top: 5%;
-
   .vmfive-solution-title {
     text-align: center;
     word-spacing: 0.25rem;
@@ -136,7 +134,11 @@
 
 .vmfive-feature {
 
-  margin-top: 5%;
+  background-image: url('/image/yellow_pattern.png');
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 40%;
+  padding: 10%;
 
   .row {
     margin-top: 3%;
@@ -157,7 +159,6 @@
 
 .vmfive-service {
   position: relative;
-  margin-top: 5%;
 
   .container-fluid {
     display: inline-flex;
@@ -165,7 +166,7 @@
     justify-content: center;
     align-items: center;
 
-    height: 100vh;
+    height: 120vh;
     background-image: url('/image/background_2.png');
     background-position: center center;
     background-repeat: no-repeat;
@@ -191,18 +192,25 @@
 }
 
 .vmfive-partners {
+
+  background-image: url('/image/yellow_pattern.png');
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 28%;
+  padding: 10%;
+
   .col-md-3 {
     display: inline-flex;
     align-items: center;
   }
-
-  img {
-    width: 100%;
-  }
 }
 
 .vmfive-contact {
-  margin-top: 5%;
+  background-image: url(/image/yellow_pattern.png);
+  background-position: 135% top;
+  background-repeat: no-repeat;
+  background-size: 40%;
+  padding: 10%;
 }
 
 @media (max-width: 768px) {
