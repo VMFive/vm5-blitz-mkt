@@ -49,13 +49,23 @@
 }
 
 /* data-hubble */
-.data-hubble-img {
-  background: center / contain no-repeat url(../image/data_hubble_effect.png);
+.data-hubble-img-effect {
+  animation: example 1.2s linear infinite alternate;
+}
+
+@keyframes example {
+  from {transform: scale(1);}
+  to {transform: scale(1.1);}
 }
 
 .data-hubble-card {
   background: linear-gradient(#192744, #0B1327);
   padding: 25px 20px;
   border-radius: 20px;
-  margin-left: -20px;
+}
+
+@media (min-width: 768px) {
+  .data-hubble-card {
+    margin-left: -20px;
+  }
 }
