@@ -119,6 +119,17 @@
       img {
         width: 45%;
       }
+
+      .card-body {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+
+        .blitz-mkt-btn {
+          position: absolute;
+          bottom: 5%;
+        }
+      }
     }
   }
 }
