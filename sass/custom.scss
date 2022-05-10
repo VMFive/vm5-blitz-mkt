@@ -343,6 +343,10 @@ body>* {
     animation: scaleAnimation 1.2s linear infinite alternate;
   }
 
+  .vmfive-data-hubble h6 {
+    text-align: justify;
+  }
+
   @keyframes scaleAnimation {
     from {
       transform: scale(1);
