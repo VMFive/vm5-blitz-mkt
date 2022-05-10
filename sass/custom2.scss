@@ -77,8 +77,13 @@
 }
 
 @keyframes example {
-  from {transform: scale(1);}
-  to {transform: scale(1.1);}
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
 }
 
 .data-hubble-card {

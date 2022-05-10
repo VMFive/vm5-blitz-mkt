@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .text-aac-gray {
   color: #6B6B6B;
 }
@@ -13,6 +17,25 @@
 
 .vmfive-yellow-pattern {
   z-index: -1;
+}
+
+.navbar {
+  .navbar-toggler {
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+
+  .navbar-toggler:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+
+  .show {
+    transition: all .2s ease;
+    box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.6);
+  }
 }
 
 .vmfive-issue {
@@ -73,7 +96,7 @@
     background-image: url('/image/background_1.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 
     .container {
       display: inline-flex;
@@ -96,6 +119,13 @@
         .blitz-mkt-btn {
           position: absolute;
           bottom: 5%;
+          box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+          transition: all 0.2s ease-in;
+        }
+
+        .blitz-mkt-btn:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.4);
         }
       }
     }
@@ -132,7 +162,7 @@
     background-image: url('/image/background_2.png');
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
   }
 
   .vmfive-card {
@@ -172,7 +202,7 @@
 
 @media (max-width: 768px) {
   .vmfive-issue {
-  
+
     .vmfive-card {
       padding: 10px;
     }

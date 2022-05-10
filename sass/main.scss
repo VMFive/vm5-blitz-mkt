@@ -10,9 +10,8 @@ sans-serif;
 @import '../node_modules/bootstrap/scss/_functions.scss';
 @import '../node_modules/bootstrap/scss/_variables.scss';
 
-$custom-spacer: (
-    'vmfive-session': $spacer * 6,
-);
+$custom-spacer: ('vmfive-session': $spacer * 6,
+    'issue': $spacer * 7);
 
 $spacers: map-merge($custom-spacer, $spacers);
 
