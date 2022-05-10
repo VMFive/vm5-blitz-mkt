@@ -1,9 +1,27 @@
-body {
+// common
+body>* {
   overflow-x: hidden;
+}
+
+.vmfive-logo {
+  width: 20%;
+}
+
+@media (max-width: 768px) {
+  .vmfive-logo {
+    width: 30%;
+  }
 }
 
 .text-aac-gray {
   color: #6B6B6B;
+}
+
+.blitz-mkt-btn {
+  background: linear-gradient(#FFE918, #F79A00);
+  padding: 12px 15px;
+  border-radius: 25px;
+  border-width: 0px;
 }
 
 .vmfive-card {
@@ -19,6 +37,8 @@ body {
   z-index: -1;
 }
 
+
+// navbar
 .navbar {
   .navbar-toggler {
     border: none;
@@ -38,6 +58,40 @@ body {
   }
 }
 
+// kv
+.vmfive-kv {
+  background: right / contain no-repeat url(../image/kv_bg.png);
+
+  .kv-text-group {
+    padding: 15% 0;
+
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .vmfive-kv {
+    background-size: cover;
+    background-position: left;
+
+    .kv-text-group {
+      text-align: center;
+      padding: 45% 0;
+
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+// issue
 .vmfive-issue {
 
   .vmfive-card {
@@ -76,6 +130,30 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .vmfive-issue {
+
+    .vmfive-card {
+      padding: 10px;
+    }
+
+    .vmfive-issue-title {
+      // margin-top: 20px;
+      // margin-bottom: 20px;
+
+      span {
+        padding: 0;
+        font-size: 1.7rem;
+      }
+    }
+
+    .vmfive-list-item {
+      align-items: flex-start;
+    }
+  }
+}
+
+//solution
 .vmfive-solution {
 
   .vmfive-solution-title {
@@ -132,6 +210,39 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .vmfive-solution {
+
+    .vmfive-solution-sub-title {
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+    }
+
+    .container-fluid {
+
+      background-image: unset;
+      background-size: cover;
+
+      .row {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+
+      .vmfive-card {
+        width: 70%;
+        height: auto;
+
+        img {
+          width: 30%;
+        }
+      }
+    }
+
+  }
+}
+
+// feature
 .vmfive-feature {
   position: relative;
 
@@ -149,6 +260,42 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .vmfive-feature {
+    .vmfive-yellow-pattern {
+      left: -50%;
+      width: 100%;
+    }
+  }
+}
+
+// ads
+.vmfive-ads {
+  .ads-text-group h5 {
+    display: inline-block;
+    padding: 0 10px;
+  }
+
+  .ads-text-group h5:not(:last-child) {
+    border-right: 3px solid #FBC01C;
+  }
+
+  .ads-logo-group img {
+    width: 12%;
+    margin: 0 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .vmfive-ads {
+    .ads-logo-group img {
+      width: 15%;
+      margin: 0 5px;
+    }
+  }
+}
+
+// service
 .vmfive-service {
   position: relative;
 
@@ -174,6 +321,54 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .vmfive-service {
+
+    .vmfive-service-title {
+      color: white !important;
+    }
+
+    .container-fluid {
+      height: auto;
+      background-image: unset;
+      background-size: cover;
+    }
+  }
+}
+
+// data-hubble
+.vmfive-data-hubble {
+
+  .data-hubble-img-effect {
+    animation: scaleAnimation 1.2s linear infinite alternate;
+  }
+
+  @keyframes scaleAnimation {
+    from {
+      transform: scale(1);
+    }
+
+    to {
+      transform: scale(1.1);
+    }
+  }
+
+  .data-hubble-card {
+    background: linear-gradient(#192744, #0B1327);
+    padding: 25px 20px;
+    border-radius: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .vmfive-data-hubble {
+    .data-hubble-card {
+      margin-left: -20px;
+    }
+  }
+}
+
+// partners
 .vmfive-partners {
 
   position: relative;
@@ -190,6 +385,7 @@ body {
   }
 }
 
+// contact
 .vmfive-contact {
   position: relative;
 
@@ -201,76 +397,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  .vmfive-issue {
-
-    .vmfive-card {
-      padding: 10px;
-    }
-
-    .vmfive-issue-title {
-      margin-top: 20px;
-      margin-bottom: 20px;
-
-      span {
-        padding: 0;
-        font-size: 1.7rem;
-      }
-    }
-
-    .vmfive-list-item {
-      align-items: flex-start;
-    }
-  }
-
-  .vmfive-solution {
-
-    .vmfive-solution-sub-title {
-      font-size: 1rem;
-      letter-spacing: 0.1rem;
-    }
-
-    .container-fluid {
-
-      background-image: unset;
-      background-size: cover;
-
-      .row {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-      }
-
-      .vmfive-card {
-        width: 70%;
-
-        img {
-          width: 30%;
-        }
-      }
-    }
-
-  }
-
-  .vmfive-feature {
-    .vmfive-yellow-pattern {
-      left: -50%;
-      width: 100%;
-    }
-  }
-
-  .vmfive-service {
-
-    .vmfive-service-title {
-      color: white !important;
-    }
-
-    .container-fluid {
-      height: auto;
-      background-image: unset;
-      background-size: cover;
-    }
-  }
-
   .vmfive-contact {
     .vmfive-yellow-pattern {
       right: -50%;
