@@ -11,6 +11,15 @@
   align-items: center;
 }
 
+.vmfive-yellow-pattern {
+  z-index: -1;
+}
+
+.vmfive-session-my {
+  margin-top: 5rem !important;
+  margin-bottom: 5rem !important;
+}
+
 .vmfive-issue {
 
   .vmfive-card {
@@ -79,7 +88,6 @@
     .vmfive-card {
       width: 30%;
       height: 450px;
-      padding: 50px 20px;
 
       img {
         width: 45%;
@@ -100,15 +108,15 @@
 }
 
 .vmfive-feature {
+  position: relative;
 
-  background-image: url('/image/yellow_pattern.png');
-  background-position: left bottom;
-  background-repeat: no-repeat;
-  background-size: 40%;
-  padding: 10%;
+  .vmfive-yellow-pattern {
+    width: 35%;
+    left: 5%;
+    top: 0;
+  }
 
   .vmfive-card {
-    padding: 40px 10px;
 
     li {
       font-size: 1.2rem;
@@ -134,7 +142,6 @@
 
   .vmfive-card {
     justify-content: center;
-    padding: 40px 10px;
   }
 
   li {
@@ -144,11 +151,13 @@
 
 .vmfive-partners {
 
-  background-image: url('/image/yellow_pattern.png');
-  background-position: left bottom;
-  background-repeat: no-repeat;
-  background-size: 28%;
-  padding: 10%;
+  position: relative;
+
+  .vmfive-yellow-pattern {
+    width: 20%;
+    left: 10%;
+    top: 0;
+  }
 
   .col-md-3 {
     display: inline-flex;
@@ -157,11 +166,13 @@
 }
 
 .vmfive-contact {
-  background-image: url(/image/yellow_pattern.png);
-  background-position: 135% top;
-  background-repeat: no-repeat;
-  background-size: 40%;
-  padding: 10%;
+  position: relative;
+
+  .vmfive-yellow-pattern {
+    width: 30%;
+    right: -15%;
+    top: 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -198,6 +209,7 @@
 
     .container-fluid {
 
+      background-image: unset;
       background-size: cover;
 
       .row {
@@ -217,9 +229,30 @@
 
   }
 
+  .vmfive-feature {
+    .vmfive-yellow-pattern {
+      left: -50%;
+      width: 100%;
+    }
+  }
+
   .vmfive-service {
+
+    .vmfive-service-title {
+      color: white !important;
+    }
+
     .container-fluid {
+      height: auto;
+      background-image: unset;
       background-size: cover;
+    }
+  }
+
+  .vmfive-contact {
+    .vmfive-yellow-pattern {
+      right: -50%;
+      width: 80%;
     }
   }
 }
