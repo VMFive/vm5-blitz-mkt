@@ -1,5 +1,6 @@
 // common
-body>* {
+
+html,body{
   overflow-x: hidden;
 }
 
@@ -392,6 +393,7 @@ body>* {
 // contact
 .vmfive-contact {
   position: relative;
+  // overflow-x: hidden;
 
   .vmfive-yellow-pattern {
     width: 30%;
