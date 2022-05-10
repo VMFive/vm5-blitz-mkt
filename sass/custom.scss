@@ -133,7 +133,7 @@
     justify-content: center;
     align-items: center;
 
-    height: 120vh;
+    min-height: 100vh;
     background-image: url('/image/background_2.png');
     background-position: center center;
     background-repeat: no-repeat;
@@ -177,10 +177,7 @@
 
 @media (max-width: 768px) {
   .vmfive-issue {
-    .container {
-      width: 100% !important;
-    }
-
+  
     .vmfive-card {
       padding: 10px;
     }
