@@ -1,33 +1,55 @@
-/* kv */
+// nav
+.vmfive-logo {
+  width: 20%;
+}
+
+@media (max-width: 768px) {
+  .vmfive-logo {
+    width: 30%;
+  }
+}
+
+// kv
 .vmfive-kv {
   background: right / contain no-repeat url(../image/kv_bg.png);
 }
 
 .kv-text-group {
   padding: 15% 0;
-}
 
-.kv-text-group h1 {
-  font-size: 3.5rem;
-}
+  h1 {
+    font-size: 3.5rem;
+  }
 
-.blitz-mkt-btn {
-  background: linear-gradient(#FFE918, #F79A00);
-  padding: 12px 15px;
-  border-radius: 25px;
-  border-width: 0px;
+  .blitz-mkt-btn {
+    background: linear-gradient(#FFE918, #F79A00);
+    padding: 12px 15px;
+    border-radius: 25px;
+    border-width: 0px;
+  }
 }
 
 @media (max-width: 768px) {
-  .kv-text-group h1 {
-    font-size: 2.5rem;
+  .vmfive-kv {
+    background-size: cover;
+    background-position: left;
   }
-  .kv-text-group p {
-    font-size: 1rem;
+
+  .kv-text-group {
+    text-align: center;
+    padding: 45% 0;
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
   }
 }
 
-/* ads */
+// ads
 .ads-text-group h5 {
   display: inline-block;
   padding: 0 10px;
