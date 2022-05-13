@@ -2,5 +2,19 @@
 $primary: #0B1327;
 $secondary: #FBC01C;
 
+$container-max-widths: (xl: 960px, xxl: 960px);
+$font-size-root: 16px;
+$font-family-sans-serif: 'Noto Sans TC',
+sans-serif;
+
+@import '../node_modules/bootstrap/scss/_functions.scss';
+@import '../node_modules/bootstrap/scss/_variables.scss';
+
+$custom-spacer: ('vmfive-session': $spacer * 6,
+    'issue': $spacer * 7);
+
+$spacers: map-merge($custom-spacer, $spacers);
+
+
 // import bootstrap
-@import '../node_modules/bootstrap/scss/bootstrap'
+@import '../node_modules/bootstrap/scss/bootstrap';
